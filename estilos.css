@@ -590,12 +590,14 @@ button.dvdcarrito {
 .card-img-top {
    transition: transform 0.3s ease-in-out;
 }
-
+ .carritodc{
+   margin-top: 5%;
+ }
 .dvdcarrito {
    transition: background-color 0.3s ease-in-out;
 }
-.card:hover {
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.productosel{
+   margin-top: 6%;
 }
 
 #titulo {
@@ -632,7 +634,12 @@ button.dvdcarrito {
    object-fit: cover;
 }
 
-/* Puedes agregar estilos adicionales aquí según sea necesario */
+.micuentapie{
+   margin-top: 10%;
+}
+.carritopie{
+   margin-top: 15%;
+}
 
 .form-register{
    margin-top: 5%;
