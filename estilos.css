@@ -165,7 +165,10 @@ body.homepage .row > * {
 .nav-link:hover{
    color: #FFD800;
 }
-
+.navbar-nav .nav-link i:hover,
+.navbar-nav .nav-link i:focus {
+    color: #FFD800 !important;
+}
 footer {
    color: #e7e5de; 
    padding: 4%; 
@@ -242,10 +245,6 @@ button:not(:disabled) {
    float: right;
 margin-top: 2%;}
 
-
-.disney{
-   width: 10%;
-}
 .card {
    width: 80%;
 }
@@ -490,7 +489,11 @@ button.dvdcarrito {
    transform: scale(0);
 }
 
-
+h3{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: #044D98;
+   font-size: large;
+}
 .dvd-card:hover .cd-image {
    transform: scale(1);
    animation: spin 2s linear infinite;
@@ -592,6 +595,10 @@ button.dvdcarrito {
 }
  .carritodc{
    margin-top: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
  }
 .dvdcarrito {
    transition: background-color 0.3s ease-in-out;
@@ -699,34 +706,36 @@ button.dvdcarrito {
        transform: translateY(0);
    }
 }
-
-@media screen and (max-width: 991px){
-   .navbar-expand-lg .container-fluid {
-      display: block;
-  }
-   .disney {
-      width: 20%;
-  }
+.disney{
+   width: 15%
 }
 
-@media screen and (max-width: 320px) 
- {
 
+
+
+@media screen and (max-width: 320px) {
    .navbar-expand-lg .container-fluid {
        display: block;
    }
    .disney {
-       width: 100%;
+       width: 80%;
    }
-   .copyr{
+   .copyr {
       font-size: small;
    }
-   #titulo{
+   #titulo {
       font-size: 50px;
-       }
+   }
 }
 
-
+@media screen and (max-width: 991px) {
+   .navbar-expand-lg .container-fluid {
+      display: block;
+   }
+   .disney {
+      width: 30%;
+   }
+}
 
 @media screen and (min-width: 1260px) {
    h1 {
